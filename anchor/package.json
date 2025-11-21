@@ -1,0 +1,15 @@
+{
+  "name": "nftmarketplace-tests",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run tests/"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4",
+    "gill": "0.11.0",
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
+  }
+}

@@ -12,6 +12,7 @@ import { getProgramAccounts, GetProgramAccountsConfig } from './get-program-acco
 
 export interface GetProgramAccountsDecodedConfig<T extends object> extends GetProgramAccountsConfig {
   decoder: Decoder<T>
+  filter?: Uint8Array
 }
 
 // TODO: This can go when codama as an option to get all the accounts of a program with filters

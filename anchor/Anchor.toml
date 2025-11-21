@@ -1,5 +1,4 @@
 [toolchain]
-package_manager = "yarn"
 
 [features]
 resolution = true
@@ -8,12 +7,15 @@ skip-lint = false
 [programs.localnet]
 nftmarketplace = "CGTG4etJpxd39CQp9nMRsVAwPT6P58zQF9XfT8zw6GhW"
 
+[programs.devnet]
+nftmarketplace = "CGTG4etJpxd39CQp9nMRsVAwPT6P58zQF9XfT8zw6GhW"
+
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/NFT-Marketplace.json"
 
 [scripts]
-test = "vitest"
+test = "yarn test"

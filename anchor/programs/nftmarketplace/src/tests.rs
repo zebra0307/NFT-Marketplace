@@ -1,6 +1,5 @@
 #![cfg(all(test, feature = "integration-tests"))]
 
-use solana_signer::Signer;
 use solana_sdk::signature::Signer;
 
 use crate::escrow_test_helpers::{

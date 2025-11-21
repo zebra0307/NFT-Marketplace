@@ -149,14 +149,14 @@ pub fn setup_escrow_test() -> EscrowTestEnvironment {
     // Bob: 0 token A, 5 token B
     mint_tokens_to_account(
         &mut litesvm,
-        &token_mint_a.pubkey(),
+        &token_mint_a,
         &alice_token_account_a,
         10 * TOKEN_A, // Alice gets 10 token A
         &mint_authority,
     ).unwrap();
     mint_tokens_to_account(
         &mut litesvm,
-        &token_mint_b.pubkey(),
+        &token_mint_b,
         &bob_token_account_b,
         5 * TOKEN_B, // Bob gets 5 token B
         &mint_authority,

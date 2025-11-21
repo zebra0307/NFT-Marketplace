@@ -1,0 +1,28 @@
+# Anchor-specific .gitignore
+
+# Build artifacts
+.anchor/
+target/
+**/*.rs.bk
+
+# Test ledger data
+test-ledger/
+
+# Keypairs (keep these secure!)
+*.keypair
+*.keypair.json
+
+# Node modules (if tests use TypeScript)
+node_modules/
+yarn.lock
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+
+# TypeScript build
+*.tsbuildinfo
+
+# Logs
+*.log
