@@ -423,19 +423,6 @@ await program.methods
 4. **Rent Reclamation** - Closes accounts and returns rent to makers
 5. **Token Program Interface** - Supports both SPL Token and Token-2022
 
-### ⚠️ Production Considerations
-
-Before deploying to mainnet:
-
-- [ ] Add offer expiration timestamps
-- [ ] Implement partial fills for fungible tokens
-- [ ] Add marketplace fees/royalties
-- [ ] Implement offer cancellation fees
-- [ ] Add pause/emergency stop mechanism
-- [ ] Conduct professional security audit
-- [ ] Add rate limiting for offer creation
-- [ ] Implement comprehensive event logging
-
 ## Project Structure
 
 ## Project Structure
@@ -560,42 +547,21 @@ cargo install --git https://github.com/coral-xyz/anchor --tag v0.32.1 anchor-cli
 [patch.crates-io]
 litesvm = { version = "0.8.2" }
 ```
-
-## Performance Metrics
-
-Based on local testing (solana-test-validator):
-
-| Operation | Compute Units | Accounts | Avg Time |
-|-----------|--------------|----------|----------|
-| Make Offer | ~35,000 CU | 5 writes | 400ms |
-| Take Offer | ~55,000 CU | 7 writes | 450ms |
-| Take Offer (SOL) | ~50,000 CU | 6 writes | 420ms |
-| Refund Offer | ~25,000 CU | 4 writes | 350ms |
-
-*Note: Actual mainnet performance may vary based on network congestion*
-
 ## Roadmap
 
-### Phase 1: Core Functionality ✅
-- [x] Basic escrow mechanism
-- [x] Token-for-token swaps
-- [x] Token-for-SOL swaps
-- [x] Refund mechanism
-- [x] Integration tests
+### Core Functionality ✅
+-  Basic escrow mechanism
+-  Token-for-token swaps
+-  Token-for-SOL swaps
+-  Refund mechanism
+-  Integration tests
 
-### Phase 2: Enhanced Features (Planned)
-- [ ] Partial fills for fungible tokens
-- [ ] Offer expiration with automatic refunds
-- [ ] Marketplace fee collection
-- [ ] Batch operations for multiple offers
-- [ ] Event logging for indexing
-
-### Phase 3: Advanced Features (Future)
-- [ ] Auction mechanism
-- [ ] Dutch auction support
-- [ ] Bundle offers (multiple tokens)
-- [ ] Royalty enforcement
-- [ ] Cross-program composability
+### Planned (to be implemented)
+-  Partial fills for fungible tokens
+-  Offer expiration with automatic refunds
+-  Marketplace fee collection
+-  Batch operations for multiple offers
+-  Event logging for indexing
 
 ## Contributing
 
@@ -606,14 +572,6 @@ Contributions are welcome! Please follow these guidelines:
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-### Development Guidelines
-
-- Write tests for new features
-- Follow Rust and TypeScript best practices
-- Update documentation for API changes
-- Run `anchor test` before submitting PR
-- Use conventional commit messages
 
 ## Resources
 
@@ -627,22 +585,7 @@ Contributions are welcome! Please follow these guidelines:
 - [SPL Token Documentation](https://spl.solana.com/token)
 - [Token-2022 Extensions](https://spl.solana.com/token-2022)
 
-### Community
-- [Solana Discord](https://discord.gg/solana)
-- [Anchor Discord](https://discord.gg/anchorlang)
-
 ## License
 
-MIT License - see LICENSE file for details
+MIT License
 
-## Disclaimer
-
-This program is provided as-is for educational purposes. It has not been audited for production use. Deploy at your own risk and conduct thorough testing and audits before handling real assets.
-
----
-
-## Author
-
-**rammsey** ([@zebra0307](https://github.com/zebra0307))
-
-Built with ❤️ using Anchor Framework on Solana
