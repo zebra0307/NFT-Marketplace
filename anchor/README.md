@@ -57,11 +57,11 @@ graph TB
     RefundOffer -->|Close| Offer
     RefundOffer -->|Close| Vault
     
-    style Offer fill:#e1f5ff
-    style Vault fill:#fff4e1
-    style MakeOffer fill:#d4edda
-    style TakeOffer fill:#d4edda
-    style RefundOffer fill:#f8d7da
+    style Offer fill:#3B2F2F
+    style Vault fill:#3B2F2F
+    style MakeOffer fill:#3B2F2F
+    style TakeOffer fill:#3B2F2F
+    style RefundOffer fill:#3B2F2F
 ```
 
 ## Program Design
@@ -365,12 +365,4 @@ When modifying the program:
 4. Add tests in `tests/` directory
 5. Run `anchor test` to verify changes
 
-## License
-
-This program is part of the NFT-Marketplace project. See root repository for license details.
-
 ---
-
-**Program Version:** 0.1.0  
-**Anchor Version:** 0.32.1  
-**Solana Version:** 2.x
