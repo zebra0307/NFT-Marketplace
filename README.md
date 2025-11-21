@@ -33,10 +33,10 @@ graph TD
     E -->|Token A → Maker| I[Maker Gets Refund]
     E --> H
     
-    style B fill:#90EE90
-    style H fill:#FFB6C1
-    style F fill:#87CEEB
-    style G fill:#87CEEB
+    style B fill:#3B2F2F
+    style H fill:#3B2F2F
+    style F fill:#3B2F2F
+    style G fill:#3B2F2F
 ```
 
 ## Program Structure
